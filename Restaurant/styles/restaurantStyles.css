@@ -1,0 +1,83 @@
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #edc79b;
+
+}
+footer{
+  font-size: 1.1em;
+}
+header, footer{
+  background-color: #713e5a;
+  color: #edc79b;
+  text-align: center;
+  height: 250px;
+  padding: 20px 10px;
+}
+h1{
+  font-size: 3.5em;
+  font-family: 'Merriweather', serif;
+}
+h5{
+  text-align: left;
+}
+#description{
+  font-size: 1.1em;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+nav{
+  border-top: 3px dashed #713E5A;
+  margin-top: 5px;
+  border-bottom: 3px dashed #713E5A;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #edc79b;
+}
+nav .btn{
+  background-color:#713E5A;
+  color:#edc79b;
+}
+.mid-section{
+  background-color: #edc79b;
+  height: 600px;
+  padding-top: 25px;
+  padding-bottom:25px;
+}
+a:visited{
+  color: #63A375;
+}
+a:hover{
+  font-weight: bold;
+}
+a:active{
+  text-decoration: none;
+}
+table{
+  border: 1px solid lightgray;
+  width: 100%;
+}
+th, td{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+th{
+  text-align: left;
+  background-color: #dcd2be;
+}
+tbody tr:nth-child(odd){
+  background-color: lightgray;
+}
+tbody tr:nth-child(even){
+  background-color: #dcd2be;
+}
+.icon{
+  height: 5em;
+width: 5em;
+}
+.jumbotron{
+  background-color: #713E5A;
+}

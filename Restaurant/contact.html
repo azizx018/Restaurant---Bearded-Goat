@@ -1,79 +1,259 @@
 <!DOCTYPE html>
 <!--
-    Name: Your Name
-    Date Created: Today's date
+    Name: chiara Aziz
+    Date Created: 12/6/18
     Most recent revision:
 -->
 <html lang="en">
     <head>
         <title>Contact The Bearded Goat</title>
-    </head>
+          <script type="text/javascript" src="restaurant.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" text="text/css" />
+        <style>
+        body{
+          max-width: 1200px;
+          margin:auto;
+        }
 
+
+            input[type=text]{
+              display: block;
+              border: 1px solid #0d1f2d;
+              width: 30%;
+              height:30px;
+              padding-left: 10px 10px;
+              display: inline-flex;
+              box-sizing: border-box;
+              font-size: 1.1em;
+              margin:auto;
+            }
+            select{
+              display: block;
+              border-radius: 10px;
+              font: 1.1em;
+              width: 20%;
+              height:30px;
+              padding:10px 10px;
+            display: inline-flex;
+             margin:auto;
+
+            }
+            textarea{
+              width: 21%;
+              height: 150px;
+              padding: 10px 10px;
+              box-sizing:border-box;
+              border: 1px solid #0d1f2d;
+              border-radius: 2px;
+              background-color: #fff;
+              resize:none;
+              display: block;
+              margin: auto;
+
+            }
+            input[type=submit]{
+              font-size: 1.2em;
+              padding: 10px 5px;
+              background-color: lightgray;
+              border-radius: 10px;
+              width:170px;
+
+            }
+            .right{
+              margin-left: 420px;
+              font-weight: bold;
+            }
+            .info{
+              display:block;
+              display: inline-flex;
+              margin-left:241px;
+            }
+            .middle{
+              display:block;
+              display: inline-flex;
+              margin-left:305px;
+            }
+
+            .question{
+              float:left;
+              width: 500px;
+              margin-left: 175px;
+            }
+            .clear-float{
+              clear:both;
+            }
+            .days{
+              float: left;
+              margin-left:220px;
+            }
+            .button{
+              display: block;
+              margin-left: 540px;
+
+            }
+            form{
+              padding-top: 20px;
+            }
+            #phone{
+              text-align: left;
+            }
+
+
+        </style>
+    </head>
+  
     <body>
-        <header>
-          <h5>Contact Us</h5>
+      <noscript><stlye type= text/css><div id="noScript"><h3>Please enable Javascript to get the full site experience.</h3></div></noscript>
+        <header class="jumbotron jumbotron-fluid">
+          <div class="container">
+          <h6 class="text-sm-left">Contact Us</h6>
             <h1>The Bearded Goat</h1>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h3 class="text-right mt-5">New Location! Opening Soon!</h3>
+            </div>
+            <div class="carousel-item">
+              <h3 class= "text-right mt-5">We're rolling out our seasonal menu, with special options for this season.</h3>
+              </div>
+            <div class="carousel-item">
+              <h3 class= "text-right mt-5">The Drink of the Month is SG Special Brew.</h3>
+            </div>
+        </div>
+        </div>
         </header>
 
         <nav>
-          <p><a href="index.html">Home</a></p>
-          <p><a href="menu.html">Menu</a></p>
-          <p><a href="contact.html">Contact Us</a></p>
-        <hr />
+          <a href="index.html"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"/></svg></a>
+          <a  class="btn badge-pill" href="menu.html">Menu</a>
+          <a class="btn badge-pill" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
 
-        <form action="submit.html" method="POST" >
-        <label for="name"> Name:</label>
-        <input type="text" id="name" name="name"><br />
-        <label for="email"> Email:</label>
-        <input type="text" id="email" name="email"><br />
-        <label for="phone"> Phone:</label>
-        <input type="text" id="phone" name="phone"><br />
+        <form class="needs-validation" novalidate name ="contactUs">
+      <div class="form-group">
+          <div class="form-group row">
+            <label for="name" class="col-lg-5 col-form-label"> Name:</label>
+            <div class="col-lg-7">
+            <input type="text" class="form-control"id="name" name="name" required><br />
+          </div>
+      </div>
+    </div>
 
+      <div class="form-group">
+        <div class="form-group row">
+        <label for="email" class="col-lg-5 col-form-label"> Email:</label>
+          <div class="col-lg-7">
+        <input type="text" class="form-control" id="email" name="email" required><br />
+          </div>
+        </div>
+      </div>
 
+      <div class="form-group">
+          <div class="form-group row">
+        <label for="phone" class="col-lg-5 col-form-label"> Phone:</label>
+            <div class="col-lg-7">
+        <input type="text" class="form-control" id="phone" name="phone" required><br />
+            </div>
+      </div>
+        </div>
+      </div>
+
+      <div class="form-group">
         <label for="inquiry">Reason for Inquiry:</label>
-          <select id="inquiry" name="inquiry">
-          <option value= "default" selected>Catering</option>
-          <option value= "private" >Private Party</option>
-          <option value= "feedback" >Feedback</option>
-          <option value= "other" >Other</option>
-        </select><br />
+        <select class="form-control" id="inquiry">
+    <option value="default">Catering</option>
+    <option>Private Party</option>
+    <option>Feedback</option>
+    <option>Other</option>
+      </select>
+    </div>
+
+
 
         <br />
-        <label for="info">Additional Information</label>
-        <textarea id="info" name="info"></textarea>
+
+        <div class="form-group">
+            <label for="info">Additional Information:</label>
+            <textarea class="form-control" id="info" rows="3"></textarea>
+          </div>
+
+          <fieldset class="form-group">
+            <div class="question">
+              <div class="row">
+          <legend class="col-form-label-lg col-lg-8 pt-7">Have you been to the restaurant?</legend>
+
+              <div class="form-check">
+                <div class="custom-control custom-radio custom-control-inline">
+            <input class="form-check-input" type="radio" name="questionnaire" id="choice1" value="No" checked>
+          <label class="form-check-label" for="choice1">No</label>
+          </div>
+        </div>
+
+
+            <div class="custom-control custom-radio custom-control-inline">
+          <input class="form-check-input" type="radio" id="choice2" name="questionnaire" value="yes">
+          <label class="form-check-label"for="choice2">Yes</label>
+        </div>
+
+      </div>
+      </fieldset>
+
+
         <br />
+        <div class="form-group form-check">
+          <div class="days">
+            <div class="form-check form-check-inline">
+          <label class="form-check-label" >Best days to contact you:</label>
+        </div>
+
+          <div class="form-check form-check-inline">
+          <input type="checkbox" class ="form-check-input" id="monday" value="Monday">
+          <label class="form-check-label" for="monday">M</label>
+        </div>
+
+          <div class="form-check form-check-inline">
+          <input type="checkbox" class ="form-check-input" id="tuesday">
+          <label class="form-check-label" for="tuesday">T</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class ="form-check-input" id="wednesday">
+          <label class="form-check-label" for="wednesday">W</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class ="form-check-input" id="thursday">
+          <label class="form-check-label" for="thursday">Th</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class ="form-check-input" id="friday">
+          <label class="form-check-label" for="friday">F</label>
+        </div>
+
+          </div>
+        </div>
 
 
-          <label>Have you been to the restaurant?</label>
-          <input type="radio" id="choice1" name="questionnaire" value="no" checked>
-          <label for="choice1">No</label>
-          <input type="radio" id="choice2" name="questionnaire" value="yes">
-          <label for="choice2">Yes</label>
         <br />
-
-
-          <label>Best days to contact you:</label>
-          <input type="checkbox" id="monday" name="day" value="monday">
-          <label for="monday">M</label>
-          <input type="checkbox" id="tuesday" name="day" value="tuesday">
-          <label for="tuesday">T</label>
-          <input type="checkbox" id="wednesday" name="day" value="wednesday">
-          <label for="wednesday">W</label>
-          <input type="checkbox" id="thursday" name="day" value="thursday">
-          <label for="thursday">Th</label>
-          <input type="checkbox" id="friday" name="day" value="friday">
-          <label for="friday">F</label>
-        <br />
-
-        <input type="submit" name="sendRequest" value="Send Request">
+      <div class="button">
+        <button type="submit" class="btn btn-primary">Send Request</button>
+      </div>
+      <div class="clear-float"></div>
 
         </form>
-        </nav>
+
 
         <hr />
         <footer>
           <p>4652 47th Ave, Minneapolis, MN, 55412</p>
           <p>952-456-0483</p>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin ="anonymous" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
 </html
